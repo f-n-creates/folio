@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favi.png">
+    <title>flora 'n' &#8212; Mockingbird</title>
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,500&family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <script src="js/java.js"></script>
+    <script src="js/mock.js"></script>
+     
+
+</head>
+    
+<body class="invisible" id="load" onload="init(1000);">
+
+<!-----topbar wrapper------>
+    <div class="wraph">
+        <div class="head">
+            <h4 style="line-height: normal"><a href="index.html" class="logo">flora '<span id="animate">n</span>'</a> <span class="title">Concept</span></h4><p class="empty"></p>
+        </div>
+
+<!-----menu button------>
+        <div class="menu">
+            <h4 style="line-height: normal">
+                <a href="index.html" class="logo">flora '<span id="ani">n</span>'</a>
+                <span class="tit">Concept</span>
+                <button id="m1">Menu</button></h4>
+            <p class="empty"></p>
+            
+<!-----menu content------>
+            <div id="menu">
+                <div class="col">
+                    <h4 style="padding-top: 20px;line-height: 160%;"> 
+                        <button class="a1">About</button>
+                        <br><button class="p1">Projects &rarr;</button>
+                    </h4>
+                </div>
+            <div id="p2">
+                <div class="col">
+                    <h4><br><br><p style="font-weight: 500;font-style: italic;padding-top: 0">Interactive</p>
+                        <p class="cap">1020 &#8212; Chrome extension</p>
+                            <a href="mock.htm" class="name">Mockingbird</a>
+                        <p class="cap">1020 &#8212; Web prototype</p>
+                            <a href="npnb.htm" class="name">Native Plants For Native Bees</a>
+                        <p class="cap">0520 &#8212; Mobile website</p>    
+                            <a href="look.htm" class="name">/ook &#40;Look&#41;</a>
+                        <p class="cap">0419 &#8212; Desktop website</p>   
+                            <a href="trc.htm" class="name">The Reading Club</a>
+                    </h4>
+                </div>
+                <div class="col">
+                    <h4><br><br><p style="font-weight: 500;font-style: italic;padding-top: 0">Video</p>
+                        <p class="cap"> 0620 &#8212; Title sequence </p>
+                            <a href="cheese.htm" class="name">The Moon Is Made Of Cheese.</a>
+                        <p class="cap">1019 &#8212; Digital signage</p>
+                            <a href="script.htm" class="name">Wander</a>
+                    </h4>
+                </div>
+            </div>
+                <div class="col" id="a2" style="display: none;width: 70%">
+                    <p style="padding-top: 20px">
+                    My name's Flora and I'm currently a student at RMIT University studying design in digital media. I call Melbourne (Australia) my home and aspire to help people who help make the lives of others a little better.<br><br>I mainly work with UI/UX, websites and motion graphics, yet I admire many types of creative work, such as architecture and interior design.<br><br>All projects featured on my portfolio are original and received a high distinction (the highest possible letter grade) in an academic setting.<br><br>Portfolio designed and built (with assistance) by Flora. Contact me via <a href="mailto:s3603936@student.rmit.edu.au">email</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----left wrapper------>    
+    <div class="wrapl">
+        <div class="left">
+            <div class="offset"></div>
+            <div class="post" id="con" style="padding-bottom: 10vh">
+                <h2><a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> is a Google Chrome extension for desktop Twitter that changes the headings and names of key functions into their literal intentions to mock the way Twitter fights to keep our attention on their site<br><br><br></h2>
+                <h3>Completed &#8212; October 2020<br>
+                Type &#8212; Chrome extension<br>
+                Visit &#8212; <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Here</a></h3>
+            </div>    
+            <div class="line" id="aes"></div>
+            <div class="post" id="text">
+                <p>Inspired by Jenny Odell's ideas on the attention economy, the extension exposes the demands of social media where they push users to spend time on the platform, and emotionally invest into the information available on the platform. <br><br>Constructed using Javascript with the help of the Google Developer documents, the extension consists of 4 components; the <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> brand, the delay to the changes, the changes made to the Twitter DOM, and the interactions that trigger certain changes.</p>
+            </div>
+            <div class="line" id="out"></div>
+            <div class="post" id="text">
+                <h2>The brand<br><br></h2>
+                <p>The <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> logo, reimagined from Twitter's existing bluebird logo to a mockingbird, represents the extension. On the DOM, Twitter's logo is replaced by the Mockingbird logo when the extension is active, signifying an altered state of the platform and a separate identity, yet remains in sync with the Twitter brand because of the trademark blue.</p>
+            </div>
+            <div class="line"></div>
+            <div class="post" id="text">
+                <h2>The delay<br><br></h2>
+                <p>When the user activates <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> and logs onto Twitter, it’ll appear normal until the change kicks in. Delaying the change serves an alarm to awaken obsessive Twitter users who are oblivious to the amount of energy they pour into social media. Ironically, it draws attention to the changed labels and invokes a realisation of the platform’s motives where they grab our attention to force users to stay.</p>
+            </div>
+            <div class="line" id="aes"></div>
+            <div class="post" id="text" style="margin-bottom: 30vh">
+                <h2>The changes &amp; interactivity<br><br></h2>
+                <p>The Tweet button on the menu remains the same to tease and remind users of what used to be. But as the button is clicked on and the modal box appears, the placeholder text eventually switches to match the text on the home page, and as the user types, so does the Tweet button. This impact places emphasis on the change as it is visible, and makes the user question themselves before they tweet. <br><br>When the user scrolls down, it triggers the wormhole where the feed is what birds tend to eat, but is also a tunnel that sucks you in to endless scrolling. The same thing occurs where the headings on the notifications, bookmarks and lists pages are changed upon scroll. <br><br>On the 'messages' page, a chat needs to be clicked on to cause the title change. Similarly to the modal box, this trigger was chosen with user interaction in mind which adds to the goal of raising awareness in Twitter users, and becomes a warning that asks them to think twice before engaging with the platform to eventually deter them from frequent usage and lurking.</p>
+            </div>
+            <div class="offset"></div>
+        </div>
+    </div>
+    
+<!-----footer------>  
+    
+    <div class="wrapf">
+        <div class="foot" style="display: none">
+            <h1>Contact me through <a href="mailto:s3603936@student.rmit.edu.au">email</a>.<br><br></h1>
+            <h1 class="old">
+                <a href="npnb.htm" id="old">Next &rarr;</a>
+            </h1>
+        </div>
+    </div> 
+
+<!-----right wrapper------>    
+    <div class="wrapr">
+        <h1 class="slogan">Mockingbird</h1>
+        <div class="right">
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px; padding-top: 10vh">'Messages' page change &amp; interactivity</p>
+                <img src="img/mock5.gif" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px">Tweet box changes &amp; interactivity</p>
+                <img src="img/mock3.gif" class="contain">
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px">The delay in changes</p>
+                <img src="img/mock.gif" class="contain">
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px">Screenshot of <span class="name">Mockingbird</span> in use </p>
+                <img src="img/mock2.png" class="contain">
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <div>
+                    <p class="cap" style="padding-bottom: 10px"><span class="name">Mockingbird</span> demo</p>
+                    <video controls class="vid" style="width: 100%;">
+                        <source src="vid/mock.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="offset"></div>
+        </div>
+    </div>
+	
+<!---------------mobile---------------> 
+    <div class="container">
+        <div>
+            <h1>Mockingbird</h1>
+        </div>
+        <div class="offset"></div>
+            <div class="post" id="c">
+                <div style="margin-bottom: 10vh">
+                    <p class="cap" style="padding-bottom: 10px"><span class="name">Mockingbird</span> demo</p>
+                    <video controls class="vid" style="width: 100%;">
+                        <source src="vid/mock.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2><a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> is a Google Chrome extension for desktop Twitter that changes the headings and names of key functions into their literal intentions to mock the way Twitter fights to keep our attention on their site<br><br><br></h2>
+                <h3>Completed &#8212; October 2020<br>
+                Type &#8212; Chrome extension<br>
+                Visit &#8212; <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Here</a></h3>
+            </div>
+        <div class="line"></div>
+            <div class="post" id="a">
+                <p>Inspired by Jenny Odell's ideas on the attention economy, the extension exposes the demands of social media where they push users to spend time on the platform, and emotionally invest into the information available on the platform. <br><br>Constructed using Javascript with the help of the Google Developer documents, the extension consists of 4 components; the <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> brand, the delay to the changes, the changes made to the Twitter DOM, and the interactions that trigger certain changes.</p>
+            </div>
+        <div class="line"></div>
+            <div class="post" id="o">
+                <h2>The brand<br><br></h2>
+                <p style="margin-bottom: 10vh">The <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> logo, reimagined from Twitter's existing bluebird logo to a mockingbird, represents the extension. On the DOM, Twitter's logo is replaced by the Mockingbird logo when the extension is active, signifying an altered state of the platform and a separate identity, yet remains in sync with the Twitter brand because of the trademark blue.</p>
+                <p class="cap" style="padding-bottom: 10px">Screenshot of <span class="name">Mockingbird</span> in use </p>
+                <img src="img/mock2.png" class="contain">
+            </div>
+        <div class="line"></div>
+            <div class="post">
+                <h2>The delay<br><br></h2>
+                <p style="margin-bottom: 10vh">When the user activates <a href="https://chrome.google.com/webstore/detail/mockingbird/hlkejcgkapokfmgiebnednjlliomhfbp" class="name" target="_blank">Mockingbird</a> and logs onto Twitter, it’ll appear normal until the change kicks in. Delaying the change serves an alarm to awaken obsessive Twitter users who are oblivious to the amount of energy they pour into social media. Ironically, it draws attention to the changed labels and invokes a realisation of the platform’s motives where they grab our attention to force users to stay.</p>
+                <p class="cap" style="padding-bottom: 10px">The delay in changes</p>
+                <img src="img/mock.gif" class="contain">
+            </div>
+        <div class="line"></div>
+            <div class="post">
+                <h2>The changes &amp; interactivity<br><br></h2>
+                <p style="margin-bottom: 10vh">The Tweet button on the menu remains the same to tease and remind users of what used to be. But as the button is clicked on and the modal box appears, the placeholder text eventually switches to match the text on the home page, and as the user types, so does the Tweet button. This impact places emphasis on the change as it is visible, and makes the user question themselves before they tweet. <br><br>When the user scrolls down, it triggers the wormhole where the feed is what birds tend to eat, but is also a tunnel that sucks you in to endless scrolling. The same thing occurs where the headings on the notifications, bookmarks and lists pages are changed upon scroll. <br><br>On the 'messages' page, a chat needs to be clicked on to cause the title change. Similarly to the modal box, this trigger was chosen with user interaction in mind which adds to the goal of raising awareness in Twitter users, and becomes a warning that asks them to think twice before engaging with the platform to eventually deter them from frequent usage and lurking.</p>
+                <p class="cap" style="padding-bottom: 10px">Tweet box changes &amp; interactivity</p>
+                <img src="img/mock3.gif" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px;">'Messages' page change &amp; interactivity</p>
+                <img src="img/mock5.gif" class="contain">
+            </div>
+        <div class="offset"></div>
+        <div>
+            <h1>Contact me through <a href="mailto:s3603936@student.rmit.edu.au">email</a>.</h1>
+        </div>
+        <div class="offset" style="position: relative;height: calc(300px + 8vh);">
+            <div>
+                <h1 class="ar"><a href="npnb.htm" style="float: right;">Next &rarr;</a></h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

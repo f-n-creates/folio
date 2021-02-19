@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favi.png">
+    <title>flora 'n' &#8212; Native Plants For Native Bees</title>
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,500&family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <script src="js/java.js"></script>
+    <script src="js/npnb.js"></script>
+    
+</head>
+    
+<body class="invisible" id="load" onload="init(1000);">
+
+<!-----topbar wrapper------>
+    <div class="wraph">
+        <div class="head">
+            <h4 style="line-height: normal"><a href="index.html" class="logo">flora '<span id="animate">n</span>'</a> <span class="title">Concept</span></h4><p class="empty"></p>
+        </div>
+
+<!-----menu button------>
+        <div class="menu">
+            <h4 style="line-height: normal">
+                <a href="index.html" class="logo">flora '<span id="ani">n</span>'</a>
+                <span class="tit">Concept</span>
+                <button id="m1">Menu</button></h4>
+            <p class="empty"></p>
+            
+<!-----menu content------>
+            <div id="menu">
+                <div class="col">
+                    <h4 style="padding-top: 20px;line-height: 160%;"> 
+                        <button class="a1">About</button>
+                        <br><button class="p1">Projects &rarr;</button>
+                    </h4>
+                </div>
+            <div id="p2">
+                <div class="col">
+                    <h4><br><br><p style="font-weight: 500;font-style: italic;padding-top: 0">Interactive</p>
+                        <p class="cap">1020 &#8212; Chrome extension</p>
+                            <a href="mock.htm" class="name">Mockingbird</a>
+                        <p class="cap">1020 &#8212; Web prototype</p>
+                            <a href="npnb.htm" class="name">Native Plants For Native Bees</a>
+                        <p class="cap">0520 &#8212; Mobile website</p>    
+                            <a href="look.htm" class="name">/ook &#40;Look&#41;</a>
+                        <p class="cap">0419 &#8212; Desktop website</p>   
+                            <a href="trc.htm" class="name">The Reading Club</a>
+                            
+                    </h4>
+                </div>
+                <div class="col">
+                    <h4><br><br><p style="font-weight: 500;font-style: italic;padding-top: 0">Video</p>
+                        <p class="cap"> 0620 &#8212; Title sequence </p>
+                            <a href="cheese.htm" class="name">The Moon Is Made Of Cheese.</a>
+                        <p class="cap">1019 &#8212; Digital signage</p>
+                            <a href="script.htm" class="name">Wander</a>
+                    </h4>
+                </div>
+            </div>
+                <div class="col" id="a2" style="display: none;width: 70%">
+                    <p style="padding-top: 20px">
+                    My name's Flora and I'm currently a student at RMIT University studying design in digital media. I call Melbourne (Australia) my home and aspire to help people who help make the lives of others a little better.<br><br>I mainly work with UI/UX, websites and motion graphics, yet I admire many types of creative work, such as architecture and interior design.<br><br>All projects featured on my portfolio are original and received a high distinction (the highest possible letter grade) in an academic setting.<br><br>Portfolio designed and built (with assistance) by Flora. Contact me via <a href="mailto:s3603936@student.rmit.edu.au">email</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----left wrapper------>    
+    <div class="wrapl">
+        <div class="left">
+            <div class="offset"></div>
+            <div class="post" id="con" style="padding-bottom: 10vh">
+                <h2><a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" class="name" target="_blank">Native Plants For Native Bees</a> is a prototype website created on Adobe XD to raise awareness about the declining numbers of native bees in Australia.<br><br><br></h2>
+                <h3>Completed &#8212; October 2020<br>
+                Type &#8212; Web prototype<br>
+                Visit &#8212; <a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" target="_blank">Here</a></h3>
+            </div>    
+            <div class="line"></div>
+            <div class="post" id="text">
+                <p>To educate people who don't have much knowledge on gardening but are interested in preserving biodiversity, the prototype showcases a collection of native Australian plants, gardening information and bee resources to encourage the direct actions of growing a bee-friendly garden, or donating to non-profit organisations that support the lives of bees.</p>
+            </div>
+            <div class="line" id="out"></div>
+            <div class="post" id="text">
+                <p>Inspired by the form of a visual dictionary, <a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" class="name" target="_blank">Native Plants For Native Bees</a> presents 18 native Australian flowers that are known to attract native bees and wildlife, and organises the information alphabetically. Using colloquial language, the plants' characteristics are provided in a simplified manner so that'll be easier for novice gardeners to understand.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="post" id="text">
+                <p>Users are able to switch between images or list views on the home page as they both have different functions. The main index page features images of the flowers up close, and when the mouse hovers over them, they show what the plant looks like from afar so that users can get a sense of its full size. There's the option to filter the plants into their respective sizes, which helps to categorise the data, and a letter menu that scrolls to the section with plants beginning with that letter.<br><br>If users want to compare the plants to each other, they are able view a list and glance over the information to quickly understand the nature of each plant. They are also able to sort the information in ascending or descending order. Plant summaries can also be accessed from either layout when the plant name is clicked on.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="post" id="text">
+                <p>The 'how' page explains anything about plants that the user is unsure about. It goes through what the site is about, how to select a plant and what factors to consider, how to use the website to choose a plant, and some gardening tips for the native plants and building a bee-friendly environment.<br><br>The 'why' page takes the user through the importance of bees, why they should care about bees, and how they can help including links to organisations they could donate to. A contents section eases accessibility on both pages by breaking down the page into smaller categories.</p>
+            </div>
+            <div class="line" id="aes"></div>
+            <div class="post" id="text" style="margin-bottom: 60vh">
+                <p>Green and yellow were the chosen colours to represent plants and bees respectively, and the website. These muted tones harmonise with the strong colours from the images. After initially beginning with Framer Web, <a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" class="name" target="_blank">Native Plants For Native Bees</a> was finally constructed with Adobe XD instead despite its limitations in functionality. </p>
+            </div>
+            <div class="offset"></div>
+        </div>
+    </div>
+    
+<!-----footer------>  
+    
+    <div class="wrapf">
+        <div class="foot" style="display: none">
+            <h1>Contact me through <a href="mailto:s3603936@student.rmit.edu.au">email</a>.<br><br></h1>
+            <h1 class="new">
+                <a href="mock.htm" id="new">&larr; Previous</a>
+            </h1>
+            <h1 class="old">
+                <a href="cheese.htm" id="old">Next &rarr;</a>
+            </h1>
+        </div>
+    </div> 
+
+<!-----right wrapper------>    
+    <div class="wrapr">
+        <h1 class="slogan">Native Plants For Native Bees</h1>
+        <div class="right">
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px">'Why' page</p>
+                <img src="img/npnb6.png" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px">'How' page</p>
+                <img src="img/npnb5.png" class="contain">
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px">Plant information</p>
+                <img src="img/npnb4.png" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px">List view</p>
+                <img src="img/npnb3.png" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px">Image view on the index page</p>
+                <img src="img/npnb.gif" class="contain">
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <div>
+                    <p class="cap" style="padding-bottom: 10px"><span class="name">Native Plants For Native Bees</span> demo</p>
+                    <video controls class="vid" style="width: 100%;">
+                        <source src="vid/npnb.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="offset"></div>
+        </div>
+    </div>
+	
+<!---------------mobile---------------> 
+    <div class="container">
+        <div>
+            <h1>Native Plants For Native Bees</h1>
+        </div>
+        <div class="offset"></div>
+            <div class="post" id="c">
+                <div style="margin-bottom: 10vh">
+                    <p class="cap" style="padding-bottom: 10px"><span class="name">Native Plants For Native Bees</span> demo</p>
+                    <video controls class="vid" style="width: 100%;">
+                        <source src="vid/npnb.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2><a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" class="name" target="_blank">Native Plants For Native Bees</a> is a prototype website created on Adobe XD to raise awareness about the declining numbers of native bees in Australia.<br><br><br></h2>
+                <h3>Completed &#8212; October 2020<br>
+                Type &#8212; Web prototype<br>
+                Visit &#8212; <a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" target="_blank">Here</a></h3>
+            </div>
+        <div class="line"></div>
+            <div class="post">
+                <p>To educate people who don't have much knowledge on gardening but are interested in preserving biodiversity, the prototype showcases a collection of native Australian plants, gardening information and bee resources to encourage the direct actions of growing a bee-friendly garden, or donating to non-profit organisations that support the lives of bees.</p>
+            </div>
+        <div class="line"></div>
+            <div class="post" id="o">
+                <p>Inspired by the form of a visual dictionary, <a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" class="name" target="_blank">Native Plants For Native Bees</a> presents 18 native Australian flowers that are known to attract native bees and wildlife, and organises the information alphabetically. Using colloquial language, the plants' characteristics are provided in a simplified manner so that'll be easier for novice gardeners to understand.
+                </p>
+            </div>
+        <div class="line"></div>
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px">Image view on the index page</p>
+                <img src="img/npnb.gif" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px">List view</p>
+                <img src="img/npnb3.png" class="contain" style="margin-bottom: 10vh">
+                <p style="margin-bottom: 10vh">Users are able to switch between images or list views on the home page as they both have different functions. The main index page features images of the flowers up close, and when the mouse hovers over them, they show what the plant looks like from afar so that users can get a sense of its full size. There's the option to filter the plants into their respective sizes, which helps to categorise the data, and a letter menu that scrolls to the section with plants beginning with that letter.<br><br>If users want to compare the plants to each other, they are able view a list and glance over the information to quickly understand the nature of each plant. They are also able to sort the information in ascending or descending order. Plant summaries can also be accessed from either layout when the plant name is clicked on.
+                </p>
+                <p class="cap" style="padding-bottom: 10px">Plant information</p>
+                <img src="img/npnb4.png" class="contain">
+            </div>
+        <div class="line"></div>
+            <div class="post">
+                <p style="margin-bottom: 10vh">The 'how' page explains anything about plants that the user is unsure about. It goes through what the site is about, how to select a plant and what factors to consider, how to use the website to choose a plant, and some gardening tips for the native plants and building a bee-friendly environment.<br><br>The 'why' page takes the user through the importance of bees, why they should care about bees, and how they can help including links to organisations they could donate to. A contents section eases accessibility on both pages by breaking down the page into smaller categories.</p>
+                <p class="cap" style="padding-bottom: 10px">'How' page</p>
+                <img src="img/npnb5.png" class="contain" style="margin-bottom: 5vh">
+                <p class="cap" style="padding-bottom: 10px">'Why' page</p>
+                <img src="img/npnb6.png" class="contain">
+            </div>
+        <div class="line"></div>
+            <div class="post" id="a">
+                <p>Green and yellow were the chosen colours to represent plants and bees respectively, and the website. These muted tones harmonise with the strong colours from the images. After initially beginning with Framer Web, <a href="https://xd.adobe.com/view/ac05b283-e767-408e-ad23-e6b99b1da566-f956/?fullscreen" class="name" target="_blank">Native Plants For Native Bees</a> was finally constructed with Adobe XD instead despite its limitations in functionality. </p>
+            </div>
+        <div class="offset"></div>
+        <div>
+            <h1>Contact me through <a href="mailto:s3603936@student.rmit.edu.au">email</a>.</h1>
+        </div>
+        <div class="offset" style="position: relative;height: calc(300px + 8vh);">
+            <div>
+                <h1 class="ar"><a href="mock.htm" style="float: left;">&larr; Previous</a><a href="cheese.htm" style="float: right;">Next &rarr;</a></h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,484 @@
+/*
+
+remove the scrollbar 
+-firefox https://www.reddit.com/r/FirefoxCSS/comments/cg0wy5/how_to_remove_scrollbar_in_firefox_68/
+
+-chrome etc
+https://codepen.io/aneekul/pen/MpByVL 
+
+:root{ 
+    scrollbar-width: none !important 
+} 
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+} 
+
+custom scrollbar
+https://codepen.io/GhostRider/pen/GHaFw
+
+::-webkit-scrollbar-track
+{
+	background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border: 1px solid #f2f2f2;
+	background-color: #555;	
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000; 
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.invisible {
+    visibility: hiden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.invisible#load{
+    background: url(img/load.gif) center fixed no-repeat;
+    background-size: 10%;
+}
+
+/*
+
+https://stackoverflow.com/questions/23750948/random-color-generated-upon-refresh
+
+.t1{
+    background-color: #E6B29F;
+    color: #48483b;
+}
+
+.t2{
+    background-color: #bcced1;
+    color: #9a6437;
+}
+
+.t3{
+    background-color: #8BA088;
+    color: #17222D;
+}
+
+.t4{
+    background-color: #C17B70;
+    color:#F5D1B3;
+}
+
+.t5{
+    background-color: #C0AAB7;
+    color: #50424E;
+}
+
+.t6{
+    background-color: #E5B583;
+    color: #6E4236;
+}
+*/
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #959595;
+}
+
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: calc(10px + 1vw);
+    text-align: center;
+    padding-top: 45vh;
+}
+
+h2, h3, h4, button, p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+h2{
+    font-size: calc(10px + 0.8vw);
+    padding-top: 15px;
+    line-height: 140%;
+}
+
+.name{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3{
+    font-size: calc(10px + 0.5vw);
+    line-height: 160%;
+}
+
+h4{
+    line-height: 160%;
+}
+
+p, h4, button{
+    font-size: calc(10px + 0.3vw);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+p{
+    line-height: 140%;
+}
+
+p.cap, .empty{
+    font-size: calc(10px + 0.2vw);
+    padding-top: 10px;
+}
+
+a, button{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+
+@media (hover: hover){
+a:hover, a:active, button:hover, button:active {
+    color: #000;
+    text-decoration: underline;
+}
+}
+
+button.clicked{
+    cursor: default;
+    color: #000;
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+    max-height: 80vh;
+    border: 1px solid #f2f2f2;
+}
+
+#v{
+    max-width: 35vw;
+}
+
+.contain{
+    object-fit: contain;
+    object-position: left;
+}
+
+.alignelse{
+    float: right;
+    text-align: left;
+    height: 100%;
+}
+
+.vid{
+    max-height: 80vh;
+    border: 1px solid #f2f2f2;
+}
+
+.wraph{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.logo{
+    margin-left: 60px;
+}
+
+.menu > h4 > .logo, .menu > h4 > .tit{
+   display: none; 
+}
+
+.title{
+    margin-left: 30%;
+    top:0;
+}
+
+.head, .menu{
+    width: 50%;
+    padding-top: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.head{
+    float: left;
+}
+
+#m1{
+    margin-left: 20px;
+    line-height: normal;
+}
+
+.menu{
+    float: right;
+}
+
+#menu{
+    display: none;
+    overflow: hidden;
+    padding: 0 0 20px 20px;
+}
+
+#menu > .col{
+    float: left;
+    width: 22%;
+}
+
+#p2 > .col{
+    float: left;
+    width: 39%;
+}
+
+.wrapl, .wrapr{
+    width: 100%;
+    height: 100%;
+    cursor: ns-resize;
+}
+
+.wrapl{
+    position: relative; 
+}
+
+.wrapr{
+    position: fixed;
+    z-index: -1000;
+}
+
+.left, .right{
+    position: absolute;
+    width: calc(50% - 80px);
+}
+
+.left{
+    top: 55px;
+    left: 60px;
+}
+
+.right{
+    bottom: 0;
+    right: 60px;
+}
+
+.post, .line, .offset{
+    float: left;
+    width: 100%;
+    background-color: transparent;
+}
+
+.post{
+    height: 100%;
+}
+
+#text{
+    padding: 10vh 0;
+}
+
+.line{
+    height: 150px;
+    border-top: 1px solid #f2f2f2;
+    transform: translateY(50%);
+}
+
+.offset{
+    height: 75vh;
+}
+
+.foot{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.old, .new{
+    width: 50%;
+    padding-top: 0;
+}
+
+.new{
+    float: left;
+}
+
+#new{
+    float: right;
+    margin-right: 20px;
+}
+
+.old{
+    float: right;
+}
+
+#old{
+    float: left;
+    margin-left: 20px;
+}
+
+.ar{
+    padding-top: 0;
+    width: 100%; 
+    position: absolute;
+    bottom: 15px;
+}
+
+.container{
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .invisible#load{
+        background-size: 6%;
+    }
+    
+    #m1{
+        margin-left: 90px;
+    }
+    
+    #menu{
+        padding-left: 90px;
+    }
+    
+    .left, .right{
+        width: calc(50% - 150px);
+    }
+    
+    .m{
+        height: 250px;
+    }
+    
+    #text{
+        padding: 15vh 0;
+    }
+    
+    #new{
+        margin-right: 90px;
+    }
+    
+    #ol{
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .invisible#load{
+        background-size: 15vh;
+    }
+    
+    h1{
+        font-size: calc(16px + 1vh);
+    }
+    
+    h2{
+        font-size: calc(15px + 0.8vh); 
+    }
+    
+    h3{
+        font-size: calc(15px + 0.5vh);
+    }
+    
+    h4, p, button{
+        font-size: calc(14px + 0.3vh);
+    }
+    
+    p.cap{
+        font-size: calc(13px + 0.1vh);   
+        padding-top: 18px;
+    }
+    
+    #v{
+        max-width: 80vw;
+    }
+    
+    .logo{
+        margin-left: 40px;
+        width: 30%;
+        text-align: left;
+    }
+    
+    .menu > h4 > .logo, .menu > h4 > .tit{
+        display: inline; 
+        float: left;
+    }
+    
+    .menu > h4 > .tit{
+        margin-left: -10px;
+    }
+    
+    .head{
+        display: none;
+    }
+    
+    .menu{
+        width: 100%;
+        padding: 13px 20px 3px 0;
+        text-align: right;
+    }
+    
+    .col{
+        text-align: left;
+    }
+    
+    #menu{
+        padding-left: 40px;
+    }
+    
+    #menu > .col{
+        width: 30%;
+    }
+
+    #p2 > .col{
+        width: 70%;
+    }
+    
+    #p2 > .col:last-child{
+        margin-left: 30%;
+    }
+    
+    .wrapl, .wrapr, .wrapf{
+        display: none;
+    }
+    
+    .offset{
+        height: calc(300px + 10vh);
+    }
+    
+    .slogan{
+        margin: auto;
+    }
+    
+    .container{
+        display: block;
+        height: 100%;
+        margin: 0 20px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 360px) {
+    .menu > h4 > .tit{
+        display: none;
+    }
+}
+
+

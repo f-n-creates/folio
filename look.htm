@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favi.png">
+    <title>flora 'n' &#8212; /ook</title>
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,500&family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <script src="js/java.js"></script>
+    <script src="js/look.js"></script>
+   
+</head>
+    
+<body class="invisible" id="load" onload="init(1000);">
+
+<!-----topbar wrapper------>
+    <div class="wraph">
+        <div class="head">
+            <h4 style="line-height: normal"><a href="index.html" class="logo">flora '<span id="animate">n</span>'</a> <span class="title">Concept</span></h4><p class="empty"></p>
+        </div>
+
+<!-----menu button------>
+        <div class="menu">
+            <h4 style="line-height: normal">
+                <a href="index.html" class="logo">flora '<span id="ani">n</span>'</a>
+                <span class="tit">Concept</span>
+                <button id="m1">Menu</button></h4>
+            <p class="empty"></p>
+            
+<!-----menu content------>
+            <div id="menu">
+                <div class="col">
+                    <h4 style="padding-top: 20px;line-height: 160%;"> 
+                        <button class="a1">About</button>
+                        <br><button class="p1">Projects &rarr;</button>
+                    </h4>
+                </div>
+            <div id="p2">
+                <div class="col">
+                    <h4><br><br><p style="font-weight: 500;font-style: italic;padding-top: 0">Interactive</p>
+                        <p class="cap">1020 &#8212; Chrome extension</p>
+                            <a href="mock.htm" class="name">Mockingbird</a>
+                        <p class="cap">1020 &#8212; Web prototype</p>
+                            <a href="npnb.htm" class="name">Native Plants For Native Bees</a>
+                        <p class="cap">0520 &#8212; Mobile website</p>    
+                            <a href="look.htm" class="name">/ook &#40;Look&#41;</a>
+                        <p class="cap">0419 &#8212; Desktop website</p>   
+                            <a href="trc.htm" class="name">The Reading Club</a>
+                    </h4>
+                </div>
+                <div class="col">
+                    <h4><br><br><p style="font-weight: 500;font-style: italic;padding-top: 0">Video</p>
+                        <p class="cap"> 0620 &#8212; Title sequence </p>
+                            <a href="cheese.htm" class="name">The Moon Is Made Of Cheese.</a>
+                        <p class="cap">1019 &#8212; Digital signage</p>
+                            <a href="script.htm" class="name">Wander</a>
+                    </h4>
+                </div>
+            </div>
+                <div class="col" id="a2" style="display: none;width: 70%">
+                    <p style="padding-top: 20px">
+                    My name's Flora and I'm currently a student at RMIT University studying design in digital media. I call Melbourne (Australia) my home and aspire to help people who help make the lives of others a little better.<br><br>I mainly work with UI/UX, websites and motion graphics, yet I admire many types of creative work, such as architecture and interior design.<br><br>All projects featured on my portfolio are original and received a high distinction (the highest possible letter grade) in an academic setting.<br><br>Portfolio designed and built (with assistance) by Flora. Contact me via <a href="mailto:s3603936@student.rmit.edu.au">email</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----left wrapper------>    
+    <div class="wrapl">
+        <div class="left">
+            <div class="offset"></div>
+            <div class="post" id="con" style="padding-bottom: 10vh">
+                <h2><a href="https://f-n-creates.github.io/look/" class="name" target="_blank">/ook</a> is an interactive mobile website that supports and encourages attentive engagement with the mundane in order to see the ordinary in new light, resulting in extraordinary encounters, meaningful experiences and an improved wellbeing.<br><br><br></h2>
+                <h3>Completed &#8212; May 2020<br>
+                Type &#8212; Mobile website<br>
+                Visit &#8212; <a href="https://f-n-creates.github.io/look/" class="name" target="_blank">Here</a></h3>
+            </div>    
+            <div class="line"></div>
+            <div class="post" id="text">
+                <p>In the midst of the COVID-19 outbreak where our internet usage increases, so does the need to keep up with overflowing news and rapid changes through the media. Because of this, the sense of connection to our physical being and physical environment is weakened, neglected and unacknowledged. How do you get back in touch with your body and the world? How do you feel present?</p>
+            </div>
+            <div class="line" id="out"></div>
+            <div class="post" id="text">
+                <p>To reconnect home stayers with their everyday lives and help find meaning, <a href="https://f-n-creates.github.io/look/" class="name" target="_blank">/ook</a> utilises the gyroscope sensors in the phone, which detect the movements and direction of the device, to navigate around a three dimensional canvas. The 3D space includes worded prompts to guide readers to concentrate on certain aspects within their immediate surroundings.<br><br>Like Georges Perec and his methods of observing the infra-ordinary, the website asks users to focus on specific forms, reflect and ultimately be mindful of their present body.</p>
+            </div>
+            <div class="line" id="aes"></div>
+            <div class="post" id="text" style="margin-bottom: 40vh">
+                <p>Influenced by minimalism in web design, <a href="https://f-n-creates.github.io/look/" class="name" target="_blank">/ook</a> adopts a soft and peaceful aesthetic with a gentle colour palette that reflects different times of the day for the purpose of calming users.<br><br>The panorama device orientation script from three.js was employed to build the 3D scene and link it to the phone's gyroscope sensors. Javascript was heavily used to add finer details, such as the slow transitions, to enhance the experience and produce something extraordinary, just like the details in what the world has to offer.</p>
+            </div>
+            <div class="offset"></div>
+        </div>
+    </div>
+    
+<!-----footer------>  
+    
+    <div class="wrapf">
+        <div class="foot" style="display: none">
+            <h1>Contact me through <a href="mailto:s3603936@student.rmit.edu.au">email</a>.<br><br></h1>
+            <h1 class="new">
+                <a href="cheese.htm" id="new">&larr; Previous</a>
+            </h1>
+            <h1 class="old">
+                <a href="script.htm" id="old">Next &rarr;</a>
+            </h1>
+        </div>
+    </div> 
+
+<!-----right wrapper------>    
+    <div class="wrapr">
+        <h1 class="slogan">/ook (Look)</h1>
+        <div class="right">
+            <div class="post">
+                <p class="cap" style="padding-bottom: 10px">The morning (6am-12pm), afternoon (12pm-6pm), evening (6pm-12am) &amp; night (12am-6am) palettes</p>
+                <img src="img/look3.png" class="contain">
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <div class="alignelse">
+                    <p class="cap" style="padding-bottom: 10px">Instructional page</p>
+                    <img src="img/look2.png" style="width: auto" id="v">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+                <div>
+                    <p class="cap" style="padding-bottom: 10px"><span class="name">/ook</span> demo</p>
+                    <video controls class="vid" id="v">
+                        <source src="vid/look.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="offset"></div>
+        </div>
+    </div>
+	
+<!---------------mobile---------------> 
+    <div class="container">
+        <div>
+            <h1>/ook (Look)</h1>
+        </div>
+        <div class="offset"></div>
+            <div class="post" id="c">
+                <div style="margin-bottom: 10vh">
+                    <p class="cap" style="padding-bottom: 10px"><span class="name">/ook</span> demo</p>
+                    <video controls class="vid" id="v">
+                        <source src="vid/look.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2><a href="https://f-n-creates.github.io/look/" class="name" target="_blank">/ook</a> is an interactive mobile website that supports and encourages attentive engagement with the mundane in order to see the ordinary in new light, resulting in extraordinary encounters, meaningful experiences and an improved wellbeing.<br><br><br></h2>
+                <h3>Completed &#8212; May 2020<br>
+                Type &#8212; Mobile website<br>
+                Visit &#8212; <a href="https://f-n-creates.github.io/look/" class="name" target="_blank">Here</a></h3>
+            </div>
+        <div class="line"></div>
+            <div class="post">
+                <p>In the midst of the COVID-19 outbreak where our internet usage increases, so does the need to keep up with overflowing news and rapid changes through the media. Because of this, the sense of connection to our physical being and physical environment is weakened, neglected and unacknowledged. How do you get back in touch with your body and the world? How do you feel present?</p>
+            </div>
+        <div class="line"></div>
+            <div class="post" id="o">
+                <p style="margin-bottom: 10vh">To reconnect home stayers with their everyday lives and help find meaning, <a href="https://f-n-creates.github.io/look/" class="name" target="_blank">/ook</a> utilises the gyroscope sensors in the phone, which detect the movements and direction of the device, to navigate around a three dimensional canvas. The 3D space includes worded prompts to guide readers to concentrate on certain aspects within their immediate surroundings.<br><br>Like Georges Perec and his methods of observing the infra-ordinary, the website asks users to focus on specific forms, reflect and ultimately be mindful of their present body.</p>
+                <div class="alignelse">
+                    <p class="cap" style="padding-bottom: 10px">Instructional page</p>
+                    <img src="img/look2.png" style="width: auto" id="v">
+                </div>
+            </div>
+        <div class="line"></div>
+            <div class="post" id="a">
+                <p style="margin-bottom: 10vh">Influenced by minimalism in web design, <a href="https://f-n-creates.github.io/look/" class="name" target="_blank">/ook</a> adopts a soft and peaceful aesthetic with a gentle colour palette that reflects different times of the day for the purpose of calming users.<br><br>The panorama device orientation script from three.js was employed to build the 3D scene and link it to the phone's gyroscope sensors. Javascript was heavily used to add finer details, such as the slow transitions, to enhance the experience and produce something extraordinary, just like the details in what the world has to offer.</p>
+                <p class="cap" style="padding-bottom: 10px">The morning (6am-12pm) &amp; afternoon (12pm-6pm) palettes</p>
+                <img src="img/look4.png" class="contain" id="v" style="margin-bottom: 5vh;width: auto">
+                <div class="alignelse">
+                    <p class="cap" style="padding-bottom: 10px">The evening (6pm-12am) &amp; night (12am-6am) palettes</p>
+                    <img src="img/look5.png" class="contain" id="v" style="width: auto">
+                </div>
+            </div>
+        <div class="offset"></div>
+        <div>
+            <h1>Contact me through <a href="mailto:s3603936@student.rmit.edu.au">email</a>.</h1>
+        </div>
+        <div class="offset" style="position: relative;height: calc(300px + 8vh);">
+            <div>
+                <h1 class="ar"><a href="cheese.htm" style="float: left;">&larr; Previous</a><a href="script.htm" style="float: right;">Next &rarr;</a></h1>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
